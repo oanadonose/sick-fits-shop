@@ -49161,9 +49161,11 @@ function (_App) {
                 pageProps = _context.sent;
 
               case 6:
-                //this exposes the query to the user
+                // this exposes the query to the user
                 pageProps.query = ctx.query;
-                return _context.abrupt("return", pageProps);
+                return _context.abrupt("return", {
+                  pageProps: pageProps
+                });
 
               case 8:
               case "end":
